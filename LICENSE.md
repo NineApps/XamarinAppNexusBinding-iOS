@@ -1,3 +1,9 @@
+Licence for AppNexus bits. 
+
+https://github.com/appnexus/mobile-sdk-ios/blob/master/LICENSE
+
+
+
 # Microsoft Public License (MS-PL)
 
 This license governs use of the accompanying software. If you use the software, you
