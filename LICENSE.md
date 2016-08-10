@@ -1,8 +1,8 @@
-Licence for AppNexus bits. 
+###Licence for AppNexus bits
 
 https://github.com/appnexus/mobile-sdk-ios/blob/master/LICENSE
 
-
+###Licence for this binding project
 
 # Microsoft Public License (MS-PL)
 
