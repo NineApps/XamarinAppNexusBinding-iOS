@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -7,7 +7,7 @@
     <ProjectTypeGuids>{8FFB629D-F513-41CE-95D2-7ECE97B6EEEC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <RootNamespace>AppNexusBindingsIOS</RootNamespace>
-    <AssemblyName>TestBindings</AssemblyName>
+    <AssemblyName>AppNexusBindingsIOS</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -45,15 +45,7 @@
   <ItemGroup>
     <ObjcBindingCoreSource Include="Structs.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <NativeReference Include="libANSDK.a">
-      <Kind>Static</Kind>
-      <SmartLink>False</SmartLink>
-    </NativeReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BundleResource Include="Resources\ANSDKResources.bundle\UIButtonBarArrowLeft.png" />
     <BundleResource Include="Resources\ANSDKResources.bundle\UIButtonBarArrowLeft%402x.png" />
@@ -89,6 +81,9 @@
     <BundleResource Include="Resources\ANSDKResources.bundle\ANInterstitialAdViewController.nib\objects.nib" />
     <BundleResource Include="Resources\ANSDKResources.bundle\ANInterstitialAdViewController.nib\runtime.nib" />
     <BundleResource Include="Resources\ANSDKResources.bundle\ANMRAID.bundle\mraid.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingNativeLibrary Include="libANSDK.a" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
 </Project>
